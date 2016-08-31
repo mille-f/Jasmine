@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'slim-rails'
 gem 'bootstrap-sass', '~> 3.3.1'
 gem 'autoprefixer-rails'
+
+gem 'uikit-sass-rails', git: 'git://github.com/8398a7/uikit-sass-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use sqlite3 as the database for Active Record
