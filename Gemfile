@@ -9,6 +9,7 @@ end
 
 gem 'slim-rails'
 gem 'autoprefixer-rails'
+gem 'bootstrap-sass', '~> 3.2.0'
 gem 'font-awesome-rails'
 gem 'devise'
 gem 'devise-i18n'
