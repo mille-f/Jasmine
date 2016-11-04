@@ -1,8 +1,17 @@
 source 'https://rubygems.org'
 
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
 gem 'slim-rails'
-gem 'bootstrap-sass', '~> 3.3.1'
 gem 'autoprefixer-rails'
+gem 'font-awesome-rails'
+gem 'devise'
+gem 'devise-i18n'
 
 gem 'uikit-sass-rails', git: 'git://github.com/8398a7/uikit-sass-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
