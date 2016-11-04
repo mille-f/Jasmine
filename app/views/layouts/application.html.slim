@@ -6,4 +6,24 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track'=> true
     = csrf_meta_tags
   body
+    #container
+      nav.uk-navbar.uk-navbar-attached
+        .uk-container.uk-container-center
+          = link_to root_path, class: 'uk-navbar-brand'
+            span.brand.bold Cosmos
+
+          ul.uk-navbar-nav.uk-hidden-small
+            li.normal-nav
+              = link_to '/home/about'
+                = fa_icon 'question-circle', text: 'About'
+            li.normal-nav.last-child
+              = link_to '#'
+                = fa_icon 'calendar', text: 'Calendar'
+
+          .uk-navbar-flip.uk-hidden-small
+            ul.uk-navbar-nav
+              li
+                = link_to '#'
+                  = fa_icon 'sign-in', text: 'Sign in'
+
     == yield
