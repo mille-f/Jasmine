@@ -1,17 +1,40 @@
 h1 Home#index
 p Find me in app/views/home/index.html.slim
 
-button.uk-button.uk-button-primary[data-uk-modal="{target:'#my-id'}"]
+button.uk-button.uk-button-primary[data-uk-modal="{target:'#modal'}"]
   | hoge
 
-#my-id.uk-modal
+#modal.uk-modal
   .uk-modal-dialog
     button.uk-modal-close.uk-close
     .uk-modal-header
-      h2 Headline
-    p
-    | hoge foo bar poge.
+      h2 11/11(水) 合同ゼミ
+    form.uk-form.uk-form-horizontal
+      .uk-form-row
+        label.uk-form-label 発表者
+        .uk-form-controls[for="presenter"]
+          .uk-grid
+            .uk-width-1-1
+              input.uk-width-1-4#presenter[type="text", placeholder=""]
+      .uk-form-row
+        label.uk-form-label 題目
+        .uk-form-controls[for="title"]
+          .uk-grid
+            .uk-width-1-1
+              input.uk-width-1-1#title[type="text"]
+      .uk-form-row
+        label.uk-form-label 発表時間
+        .uk-form-controls[for="time"]
+          .uk-grid
+            .uk-width-1-1
+              input.uk-width-1-6#time[type="number"]  分程度
+      .uk-form-row
+        label.uk-form-label カテゴリ
+        .uk-form-controls[for="category"]
+          select#category
+            option 生卵
+            option 半熟
     .uk-modal-footer.uk-text-right
-      button.uk-button Cancel
+      button.uk-modal-close.uk-button Cancel
       '
-      button.uk-button.uk-button-primary Save
+      button.uk-button.uk-button-primary[type="submit"] Submit
