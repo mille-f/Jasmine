@@ -1,3 +1,17 @@
 h1 Home#index
 p Find me in app/views/home/index.html.slim
-button class="btn btn-primary" hoge
+
+button.uk-button.uk-button-primary[data-uk-modal="{target:'#my-id'}"]
+  | hoge
+
+#my-id.uk-modal
+  .uk-modal-dialog
+    button.uk-modal-close.uk-close
+    .uk-modal-header
+      h2 Headline
+    p
+    | hoge foo bar poge.
+    .uk-modal-footer.uk-text-right
+      button.uk-button Cancel
+      '
+      button.uk-button.uk-button-primary Save
