@@ -11,25 +11,29 @@ button.uk-button.uk-button-primary[data-uk-modal="{target:'#modal'}"]
       h2 11/11(水) 合同ゼミ
     form.uk-form.uk-form-horizontal
       .uk-form-row
-        label.uk-form-label 発表者
+        label.uk-form-label
+          = fa_icon 'user', text: '発表者'
         .uk-form-controls[for="presenter"]
           .uk-grid
             .uk-width-1-1
               input.uk-width-1-4#presenter[type="text", placeholder=""]
       .uk-form-row
-        label.uk-form-label 題目
+        label.uk-form-label
+          = fa_icon 'file-text-o', text: '題目'
         .uk-form-controls[for="title"]
           .uk-grid
             .uk-width-1-1
               input.uk-width-1-1#title[type="text"]
       .uk-form-row
-        label.uk-form-label 発表時間
+        label.uk-form-label
+          = fa_icon 'clock-o', text: '発表時間'
         .uk-form-controls[for="time"]
           .uk-grid
             .uk-width-1-1
               input.uk-width-1-6#time[type="number"]  分程度
       .uk-form-row
-        label.uk-form-label カテゴリ
+        label.uk-form-label
+          = fa_icon 'tag', text: 'カテゴリ'
         .uk-form-controls[for="category"]
           select#category
             option 生卵
