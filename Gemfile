@@ -13,6 +13,8 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem 'font-awesome-rails'
 gem 'devise'
 gem 'devise-i18n'
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
 
 gem 'uikit-sass-rails', git: 'git://github.com/8398a7/uikit-sass-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -56,4 +58,3 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
