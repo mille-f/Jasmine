@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'home/index'
   get 'home/about'
+  get 'home/calendar'
 
   root to: 'home#index'
 
