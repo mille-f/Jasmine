@@ -13,6 +13,7 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem 'font-awesome-rails'
 gem 'devise'
 gem 'devise-i18n'
+gem "simple_calendar", "~> 2.0"
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
 
