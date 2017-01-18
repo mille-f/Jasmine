@@ -16,9 +16,13 @@ html
             li.normal-nav
               = link_to '/home/about'
                 = fa_icon 'question-circle', text: 'About'
-            li.normal-nav.last-child
+            li.normal-nav
               = link_to '/home/calendar'
                 = fa_icon 'calendar', text: 'Calendar'
+            li.normal-nav.last-child
+              = link_to '/home/calendar'
+                i.icon-podium-winner
+                |  Ranking
 
           .uk-navbar-flip.uk-hidden-small
             ul.uk-navbar-nav
