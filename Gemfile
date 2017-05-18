@@ -7,19 +7,20 @@ group :development, :test do
   gem 'binding_of_caller'
 end
 
-gem 'slim-rails'
+gem 'slim-rails', git: 'https://github.com/slim-template/slim-rails'
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.2.0'
-gem 'font-awesome-rails'
+gem 'font-awesome-rails', git: 'https://github.com/bokmann/font-awesome-rails'
 gem 'webhostinghub-glyphs-rails'
-gem 'devise'
+gem 'devise', git: 'https://github.com/plataformatec/devise'
 gem 'devise-i18n'
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
 
-gem 'uikit-sass-rails', git: 'git://github.com/8398a7/uikit-sass-rails'
+gem 'uikit-sass-rails', git: 'https://github.com/8398a7/uikit-sass-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.1'
+gem 'rails', '~> 5.0.0'
+gem 'sprockets-rails', :git => 'https://github.com/rails/sprockets-rails.git'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -27,7 +28,7 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.2.1'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
